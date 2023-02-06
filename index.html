@@ -379,17 +379,29 @@
             <h2>CONTACT</h2>
             <div class="fila">
                 <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone number">
-                    <input type="text" placeholder="Mail ">
-                    <input type="text" placeholder="issue">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                
+                <form class="col" enctype="text/plain" action="mailto:vector6971@gmail.com" method="post">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Name">
+
+                    <label for="Phone number">Phone number:</label>
+                    <input type="tel" name="Phone number" placeholder="(area code) Number">
+
+                    <label for="e-mail">E-mail:</label>
+                    <input type="e-mail" name="e-email" placeholder="e-mail:">
+
+                    <label for="issue"></label>
+                    <input type="text" name="issue" placeholder="issue">
+
+                    <label for="Mensaje"></label>
+                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button>
                         Send Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
+                </form>
+                
                 <!-- Mapa -->
                 <div class="col">
                     <img src="img/ubicacion.png" alt="">
